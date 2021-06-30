@@ -20,29 +20,29 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"allen-zc.gitee.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":"/source/images/scroll.png"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"./public/search.xml"};
+    var CONFIG = {"hostname":"allen-zc.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":"/source/images/scroll.png"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"./public/search.xml"};
   </script>
 
   <meta name="description" content="这个笔记同时使用了两本教材：《计算机网络：自顶向下方法（原书第六版）》和《计算机网络（谢希仁 第七版）》， 目录结构按照自顶向下排列。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="《计算机网络》复习笔记">
-<meta property="og:url" content="http://allen-zc.gitee.io/cc_allen/2020/10/25/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E3%80%8B%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:url" content="https://allen-zc.github.io/2020/10/25/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E3%80%8B%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="AllenChen&#39;s Blog">
 <meta property="og:description" content="这个笔记同时使用了两本教材：《计算机网络：自顶向下方法（原书第六版）》和《计算机网络（谢希仁 第七版）》， 目录结构按照自顶向下排列。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://allen-zc.gitee.io/upload_image/computer_network/TCP%E6%8B%A5%E5%A1%9E%E7%AA%97%E5%8F%A3cwnd%E5%9C%A8%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6%E6%97%B6%E7%9A%84%E5%8F%98%E5%8C%96%E6%83%85%E5%86%B5.png">
-<meta property="og:image" content="http://allen-zc.gitee.io/upload_image/computer_network/TCP%E7%9A%84%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6%E6%B5%81%E7%A8%8B%E5%9B%BE.png">
-<meta property="og:image" content="http://allen-zc.gitee.io/upload_image/computer_network/TCP%E8%BF%9E%E6%8E%A5%E9%87%8A%E6%94%BE%E7%9A%84%E8%BF%87%E7%A8%8B.png">
-<meta property="og:image" content="http://allen-zc.gitee.io/upload_image/computer_network/TCP%E7%9A%84%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA.png">
+<meta property="og:image" content="https://allen-zc.github.io/upload_image/computer_network/TCP%E6%8B%A5%E5%A1%9E%E7%AA%97%E5%8F%A3cwnd%E5%9C%A8%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6%E6%97%B6%E7%9A%84%E5%8F%98%E5%8C%96%E6%83%85%E5%86%B5.png">
+<meta property="og:image" content="https://allen-zc.github.io/upload_image/computer_network/TCP%E7%9A%84%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6%E6%B5%81%E7%A8%8B%E5%9B%BE.png">
+<meta property="og:image" content="https://allen-zc.github.io/upload_image/computer_network/TCP%E8%BF%9E%E6%8E%A5%E9%87%8A%E6%94%BE%E7%9A%84%E8%BF%87%E7%A8%8B.png">
+<meta property="og:image" content="https://allen-zc.github.io/upload_image/computer_network/TCP%E7%9A%84%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA.png">
 <meta property="article:published_time" content="2020-10-25T09:06:07.000Z">
 <meta property="article:modified_time" content="2020-12-23T15:23:25.273Z">
 <meta property="article:author" content="AllenChen">
 <meta property="article:tag" content="computer-networks">
 <meta property="article:tag" content="Review-notes">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://allen-zc.gitee.io/upload_image/computer_network/TCP%E6%8B%A5%E5%A1%9E%E7%AA%97%E5%8F%A3cwnd%E5%9C%A8%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6%E6%97%B6%E7%9A%84%E5%8F%98%E5%8C%96%E6%83%85%E5%86%B5.png">
+<meta name="twitter:image" content="https://allen-zc.github.io/upload_image/computer_network/TCP%E6%8B%A5%E5%A1%9E%E7%AA%97%E5%8F%A3cwnd%E5%9C%A8%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6%E6%97%B6%E7%9A%84%E5%8F%98%E5%8C%96%E6%83%85%E5%86%B5.png">
 
-<link rel="canonical" href="http://allen-zc.gitee.io/cc_allen/2020/10/25/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E3%80%8B%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+<link rel="canonical" href="https://allen-zc.github.io/2020/10/25/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E3%80%8B%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/">
 
 
 <script id="page-configurations">
@@ -249,7 +249,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://allen-zc.gitee.io/cc_allen/2020/10/25/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E3%80%8B%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+    <link itemprop="mainEntityOfPage" href="https://allen-zc.github.io/2020/10/25/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E3%80%8B%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <a target="_blank" rel="noopener" href="https://allenchenblog.cn/"><meta itemprop="image" content="/images/avatar.jpg"></a>
@@ -1132,14 +1132,14 @@
   <!-- 引用链接 -->
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://allen-zc.gitee.io/cc_allen/2020/10/25/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E3%80%8B%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="《计算机网络》复习笔记"
-      >http://allen-zc.gitee.io/cc_allen/2020/10/25/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E3%80%8B%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/</a
+    <a href="https://allen-zc.github.io/2020/10/25/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E3%80%8B%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="《计算机网络》复习笔记"
+      >https://allen-zc.github.io/2020/10/25/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E3%80%8B%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/</a
     >
     <span class="copy-path" title="点击复制引用链接"
       ><i
         style="cursor: pointer"
         class="fa fa-clipboard"
-        data-clipboard-text="[AllenChen's Blog | 《计算机网络》复习笔记](http://allen-zc.gitee.io/cc_allen/2020/10/25/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E3%80%8B%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/)"
+        data-clipboard-text="[AllenChen's Blog | 《计算机网络》复习笔记](https://allen-zc.github.io/2020/10/25/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E3%80%8B%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/)"
         aria-label="复制成功"
       ></i
     ></span>

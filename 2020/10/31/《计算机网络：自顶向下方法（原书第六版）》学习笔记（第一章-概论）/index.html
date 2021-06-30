@@ -20,13 +20,13 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"allen-zc.gitee.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":"/source/images/scroll.png"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"./public/search.xml"};
+    var CONFIG = {"hostname":"allen-zc.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":"/source/images/scroll.png"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"./public/search.xml"};
   </script>
 
   <meta name="description" content="本章笔记复习材料采用《计算机网络：自顶向下方法（原书第六版）》，目录结构采用自顶向下方法排列。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="《计算机网络：自顶向下方法（原书第六版）》全书知识梳理复习笔记">
-<meta property="og:url" content="http://allen-zc.gitee.io/cc_allen/2020/10/31/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%EF%BC%9A%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95%EF%BC%88%E5%8E%9F%E4%B9%A6%E7%AC%AC%E5%85%AD%E7%89%88%EF%BC%89%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%A6%82%E8%AE%BA%EF%BC%89/index.html">
+<meta property="og:url" content="https://allen-zc.github.io/2020/10/31/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%EF%BC%9A%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95%EF%BC%88%E5%8E%9F%E4%B9%A6%E7%AC%AC%E5%85%AD%E7%89%88%EF%BC%89%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%A6%82%E8%AE%BA%EF%BC%89/index.html">
 <meta property="og:site_name" content="AllenChen&#39;s Blog">
 <meta property="og:description" content="本章笔记复习材料采用《计算机网络：自顶向下方法（原书第六版）》，目录结构采用自顶向下方法排列。">
 <meta property="og:locale" content="zh_CN">
@@ -36,7 +36,7 @@
 <meta property="article:tag" content="computer-networks">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://allen-zc.gitee.io/cc_allen/2020/10/31/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%EF%BC%9A%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95%EF%BC%88%E5%8E%9F%E4%B9%A6%E7%AC%AC%E5%85%AD%E7%89%88%EF%BC%89%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%A6%82%E8%AE%BA%EF%BC%89/">
+<link rel="canonical" href="https://allen-zc.github.io/2020/10/31/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%EF%BC%9A%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95%EF%BC%88%E5%8E%9F%E4%B9%A6%E7%AC%AC%E5%85%AD%E7%89%88%EF%BC%89%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%A6%82%E8%AE%BA%EF%BC%89/">
 
 
 <script id="page-configurations">
@@ -243,7 +243,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://allen-zc.gitee.io/cc_allen/2020/10/31/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%EF%BC%9A%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95%EF%BC%88%E5%8E%9F%E4%B9%A6%E7%AC%AC%E5%85%AD%E7%89%88%EF%BC%89%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%A6%82%E8%AE%BA%EF%BC%89/">
+    <link itemprop="mainEntityOfPage" href="https://allen-zc.github.io/2020/10/31/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%EF%BC%9A%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95%EF%BC%88%E5%8E%9F%E4%B9%A6%E7%AC%AC%E5%85%AD%E7%89%88%EF%BC%89%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%A6%82%E8%AE%BA%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <a target="_blank" rel="noopener" href="https://allenchenblog.cn/"><meta itemprop="image" content="/images/avatar.jpg"></a>
@@ -338,7 +338,7 @@
       
         <h1 id="《计算机网络：自顶向下方法（原书第六版）》全书知识梳理复习笔记"><a href="#《计算机网络：自顶向下方法（原书第六版）》全书知识梳理复习笔记" class="headerlink" title="《计算机网络：自顶向下方法（原书第六版）》全书知识梳理复习笔记"></a>《计算机网络：自顶向下方法（原书第六版）》全书知识梳理复习笔记</h1><p>本章笔记复习材料采用《计算机网络：自顶向下方法（原书第六版）》，目录结构采用自顶向下方法排列。</p>
 <blockquote>
-<p>日常牢记<span class="exturl" data-url="aHR0cHM6Ly9hbGxlbi16Yy5naXRodWIuaW8vMjAyMC8xMC8yNi9NYXJrZG93biVFOCVBRiVBRCVFNiVCMyU5NS8=">Markdown语法<i class="fa fa-external-link-alt"></i></span></p>
+<p>日常牢记<a href="https://allen-zc.github.io/2020/10/26/Markdown%E8%AF%AD%E6%B3%95/">Markdown语法</a></p>
 </blockquote>
 <h1 id="第一章-概论"><a href="#第一章-概论" class="headerlink" title="第一章 概论"></a>第一章 概论</h1><p>最大的计算机网络—因特网（Internet），利用有线和无线传输介质，链接大大小小的计算机系统。它允许用户共享包括文本、图像、音频和视频在内的大量信息，允许用户之间相互发送消息。</p>
 <h2 id="Internet-概览"><a href="#Internet-概览" class="headerlink" title="Internet 概览"></a>Internet 概览</h2><p>Internet不是一个单一的网络，而是一个互联网络（internetwork），多个网络的组合。</p>
@@ -441,14 +441,14 @@
   <!-- 引用链接 -->
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://allen-zc.gitee.io/cc_allen/2020/10/31/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%EF%BC%9A%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95%EF%BC%88%E5%8E%9F%E4%B9%A6%E7%AC%AC%E5%85%AD%E7%89%88%EF%BC%89%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%A6%82%E8%AE%BA%EF%BC%89/" title="《计算机网络：自顶向下方法（原书第六版）》全书知识梳理复习笔记"
-      >http://allen-zc.gitee.io/cc_allen/2020/10/31/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%EF%BC%9A%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95%EF%BC%88%E5%8E%9F%E4%B9%A6%E7%AC%AC%E5%85%AD%E7%89%88%EF%BC%89%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%A6%82%E8%AE%BA%EF%BC%89/</a
+    <a href="https://allen-zc.github.io/2020/10/31/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%EF%BC%9A%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95%EF%BC%88%E5%8E%9F%E4%B9%A6%E7%AC%AC%E5%85%AD%E7%89%88%EF%BC%89%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%A6%82%E8%AE%BA%EF%BC%89/" title="《计算机网络：自顶向下方法（原书第六版）》全书知识梳理复习笔记"
+      >https://allen-zc.github.io/2020/10/31/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%EF%BC%9A%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95%EF%BC%88%E5%8E%9F%E4%B9%A6%E7%AC%AC%E5%85%AD%E7%89%88%EF%BC%89%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%A6%82%E8%AE%BA%EF%BC%89/</a
     >
     <span class="copy-path" title="点击复制引用链接"
       ><i
         style="cursor: pointer"
         class="fa fa-clipboard"
-        data-clipboard-text="[AllenChen's Blog | 《计算机网络：自顶向下方法（原书第六版）》全书知识梳理复习笔记](http://allen-zc.gitee.io/cc_allen/2020/10/31/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%EF%BC%9A%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95%EF%BC%88%E5%8E%9F%E4%B9%A6%E7%AC%AC%E5%85%AD%E7%89%88%EF%BC%89%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%A6%82%E8%AE%BA%EF%BC%89/)"
+        data-clipboard-text="[AllenChen's Blog | 《计算机网络：自顶向下方法（原书第六版）》全书知识梳理复习笔记](https://allen-zc.github.io/2020/10/31/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%EF%BC%9A%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95%EF%BC%88%E5%8E%9F%E4%B9%A6%E7%AC%AC%E5%85%AD%E7%89%88%EF%BC%89%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%A6%82%E8%AE%BA%EF%BC%89/)"
         aria-label="复制成功"
       ></i
     ></span>
